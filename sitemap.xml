@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Головна сторінка -->
+   <url>
+      <loc>https://kuzenny.com/index.html</loc>
+      <priority>1.0</priority>
+      <changefreq>monthly</changefreq>
+   </url>
+   <!-- Папка зі сторінками оригінальних акрилових картин -->
+   <url>
+      <loc>https://kuzenny.com/acrylic_paintings/</loc>
+      <priority>0.8</priority>
+      <changefreq>monthly</changefreq>
+   </url>
+   <!-- Папка Manifesto -->
+   <url>
+      <loc>https://kuzenny.com/meta_minimalism_manifesto.html/</loc>
+      <priority>0.8</priority>
+      <changefreq>monthly</changefreq>
+   </url>
+</urlset>
