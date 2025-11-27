@@ -34,7 +34,7 @@
     | <strong style="margin-right:8px;" >LEONID</strong> KUZENNY</a></h1>page : 
 <div id="menu" style="background-color: rgba(255, 255, 255, 0.7); align-items: baseline; font-size: 18px; font-weight: 600; "></div> 
 <script>
-  fetch('/menu.html')
+  fetch('menu.html')
     .then(r => r.text())
     .then(html => {
       document.getElementById('menu').innerHTML = html;
@@ -471,5 +471,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	</body>
 
 </html>
+
 
 
