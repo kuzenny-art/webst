@@ -453,7 +453,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
   // Завантажуємо перше меню
-  fetch('/menu1.html')
+  fetch('menu1.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('menu1').innerHTML = html;
@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(err => console.error('Помилка завантаження menu1:', err));
 
   // Завантажуємо друге меню
-  fetch('/menu2.html')
+  fetch('menu2.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('menu2').innerHTML = html;
@@ -472,6 +472,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	</body>
 
 </html>
+
 
 
 
