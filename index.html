@@ -32,15 +32,8 @@
   <a href="index.html" style="display:inline-flex;align-items:center;">
     <img src="logo.png" alt="Leonid Kuzenny large canvas art to order" width="38" height="32" style="display:inline-block;margin-right:8px;" />
     | <strong style="margin-right:8px;" >LEONID</strong> KUZENNY</a></h1>page : 
-<div id="menu" style="background-color: rgba(255, 255, 255, 0.7); align-items: baseline; font-size: 18px; font-weight: 600; "></div> 
-<script>
-          fetch('/menu.html')
-            .then(r => r.text())
-            .then(html => {
-              document.getElementById('menu').innerHTML = html;
-            });
-        </script>
-      </section>
+<div id="menu1" style="background-color: rgba(255, 255, 255, 0.7); align-items: baseline; font-size: 18px; font-weight: 600; "></div>
+</section>
 
 
 						<nav>
@@ -138,15 +131,6 @@
         <div id="menu2" style="background-color: rgba(255, 255, 255, 0.7); 
             padding: 18px; border: 1px solid #ccc; display: grid; 
             grid-template-columns: repeat(2, 1fr); gap: 2px 20px;"></div> 
-
-        <script>
-          fetch('/menu2.html')
-            .then(r => r.text())
-            .then(html => {
-              document.getElementById('menu2').innerHTML = html;
-            });
-        </script>
-      </section>
 
       <br>
 
@@ -467,11 +451,28 @@ document.addEventListener('DOMContentLoaded', () => {
   gtag('config', 'G-SWCY5PZ0N8');
 </script>
 
+<script>
+  // Завантажуємо перше меню
+  fetch('menu1.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('menu1').innerHTML = html;
+    })
+    .catch(err => console.error('Помилка завантаження menu1:', err));
 
+  // Завантажуємо друге меню
+  fetch('menu2.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('menu2').innerHTML = html;
+    })
+    .catch(err => console.error('Помилка завантаження menu2:', err));
+</script>
 
 	</body>
 
 </html>
+
 
 
 
