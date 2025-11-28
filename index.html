@@ -128,9 +128,10 @@
     <div>
       <section>
         <h2>Collection Vibe</h2>
-        <div id="menu2" style="background-color: rgba(255, 255, 255, 0.7); 
+        <div id="menu" style="background-color: rgba(255, 255, 255, 0.7); 
             padding: 18px; border: 1px solid #ccc; display: grid; 
             grid-template-columns: repeat(2, 1fr); gap: 2px 20px;"></div> 
+		  <script> fetch('menu.html') .then(r => r.text()) .then(html => { document.getElementById('menu').innerHTML = html; }); </script>
 
       <br>
 
@@ -470,6 +471,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	</body>
 
 </html>
+
 
 
 
