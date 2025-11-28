@@ -452,25 +452,25 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <script>
-  async function loadMenu(id, url) {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error('HTTP error ' + response.status);
-      const html = await response.text();
-      document.getElementById(id).innerHTML = html;
-    } catch (err) {
-      console.error(`Помилка завантаження ${id}:`, err);
-    }
+  function loadMenuUsingObject(id, url) {
+    const container = document.getElementById(id);
+    const obj = document.createElement('object');
+    obj.data = url;
+    obj.type = 'text/html';
+    obj.style.width = '100%';
+    obj.style.height = '100%';
+    obj.style.border = 'none';
+    container.appendChild(obj);
   }
 
-  // Викликаємо функцію для обох меню
-  loadMenu('menu1', 'menu1.html');
-  loadMenu('menu2', 'menu2.html');
+  loadMenuUsingObject('menu1', '/menu1.html');
+  loadMenuUsingObject('menu2', '/menu2.html');
 </script>
 
 	</body>
 
 </html>
+
 
 
 
