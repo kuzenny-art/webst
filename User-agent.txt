@@ -5,10 +5,11 @@ Disallow: /images/tmp/
 
 # Дозволяємо індексувати всі основні сторінки та папки
 Allow: /index.html
-Allow: /acrylic_paintings/
+Allow: /custom_acrylic_paintings/
 Allow: /meta_minimalism_manifesto.html
 Allow: /images/
 Allow: /
 
 # Sitemap (якщо буде)
+
 Sitemap: https://kuzenny.art/sitemap.xml
